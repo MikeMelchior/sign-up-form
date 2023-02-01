@@ -2,9 +2,15 @@
     --varname: var();
 }
 
+@font-face {
+    font-family: Norse-bold;
+    src: url(./Norse-Bold.otf);
+  }
 
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
 }
+
+
