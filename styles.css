@@ -1,14 +1,18 @@
+@font-face {
+    font-family: Norse-bold;
+    src: url(./Norse-Bold.otf);
+  }
+
+
 :root {
     --varname: var();
 }
 
 * {
     margin: 0;
+
 }
-@font-face {
-    font-family: Norse-bold;
-    src: url(./Norse-Bold.otf);
-  }
+
 
 body {
     width: 100vw;
@@ -24,9 +28,31 @@ body {
 
 .left {
     position: absolute;
-    width: 40%;
+    width: 35%;
     height: 100%;
     background-image: url(./halie-west-leaf.jpg);
     background-size: cover;
 }
+    .logo-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .logo {
+        height: 150px;
+        margin: 1rem 0rem;
+    }
+
+    .logo-text {
+        color: whitesmoke;
+        font-size: 7rem;
+        font-family: Norse-bold, 'Times New Roman', Times, serif;
+        
+    }
 
