@@ -5,7 +5,7 @@
 
 
 :root {
-    --varname: var();
+    --softWhite: rgba(240,240,240,0.8);
 }
 
 * {
@@ -28,6 +28,8 @@ body {
 
 .left {
     position: absolute;
+    display: flex;
+    justify-content: center;
     width: 35%;
     height: 100%;
     background-image: url(./halie-west-leaf.jpg);
@@ -52,7 +54,17 @@ body {
     .logo-text {
         color: whitesmoke;
         font-size: 7rem;
-        font-family: Norse-bold, 'Times New Roman', Times, serif;
-        
+        font-family: Norse-bold, 'Times New Roman', Times, serif;  
+    }
+
+    .credit-text {
+        position: absolute;
+        bottom: 10px;
+        color: var(--softWhite);
+        font-size: 1.05rem;
+    }
+    
+    a {
+        color: var(--softWhite);
     }
 
