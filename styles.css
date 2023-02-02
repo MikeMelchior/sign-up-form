@@ -26,7 +26,7 @@ body {
 
 .main {
     position: relative;
-    width: 70%;
+    width: 75%;
     height: 100%;
 }
 
@@ -58,7 +58,7 @@ body {
 
     .logo-text {
         color: whitesmoke;
-        font-size: max(13vh, 90px);
+        font-size: max(11vh, 90px);
         font-family: Norse-bold, 'Times New Roman', Times, serif;  
     }
 
@@ -115,9 +115,11 @@ body {
         flex-direction: column;
         top: 36%;
         height: 32%;
+        min-height: fit-content;
         box-shadow: 0px 8px 7px -5px #777777;
         background-color: white;
         z-index: 1;
+        border-top: 1px solid #eee;
     }
 
         .middle-right p {
@@ -160,6 +162,13 @@ body {
                 border: 1px #E5E7EB solid;
                 border-radius: 5px;
                 height: 2rem;
+            }
+
+            .middle-right .password-warning {
+                position: absolute;
+                bottom: 5%;
+                font-size: max(10px, 1.5vh);
+                color: red;
             }
 
         .middle-right p,
@@ -207,3 +216,18 @@ body {
             margin-left: 3rem;
         }
 
+
+        :focus-visible {
+            outline: none;
+            border: 1px solid #c8c8ff;               
+            box-shadow: 1px 1px 5px #c8c8ff;
+        }
+
+        .invalid {
+            border: 1px solid red;
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+        
